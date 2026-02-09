@@ -13,6 +13,16 @@ for num in m:
     for x in n:
         if x == num:
             count += 1
-    print(count)
+    print(f"the count of elements on m present in n {count} ==> using brute force")
 #  time complecity = O(m*n) it will throw a TLE error cause it's bigger than 10**8
 # space complexity O(1)
+
+# using hashing optimal solution 
+hash_list = [0]*11
+for num in n:
+    hash_list[num] += 1
+for num in m:
+    if num < 1 or num > 10:
+        print(f"the count of elements on list  m {num} present in n {0}")
+    else:
+        print(f"the count of elements on list m {num}  present in n {hash_list[num]}")
