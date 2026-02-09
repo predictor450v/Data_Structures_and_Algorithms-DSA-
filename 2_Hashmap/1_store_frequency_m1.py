@@ -14,3 +14,4 @@ print(f"1 repeted => {freq_map[1]} times")
 
 # time complexity  = o(n)+o(1)+o(1)+o(1) which is equal to o(n)
 # space complexity = 0(N)
+
