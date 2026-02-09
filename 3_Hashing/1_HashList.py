@@ -18,7 +18,7 @@ for num in m:
 # space complexity O(1)
 
 # using hashing optimal solution 
-hash_list = [0]*11
+hash_list = [0]*11  #[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 for num in n:
     hash_list[num] += 1
 for num in m:
@@ -26,3 +26,5 @@ for num in m:
         print(f"the count of elements on list  m {num} present in n {0}")
     else:
         print(f"the count of elements on list m {num}  present in n {hash_list[num]}")
+# time complexcity = o(n+m) almost 10**8
+# space complexity = o(11) alomost o(1)
