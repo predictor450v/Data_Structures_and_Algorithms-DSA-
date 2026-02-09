@@ -14,3 +14,5 @@ for num in m:
         if x == num:
             count += 1
     print(count)
+#  time complecity = O(m*n) it will throw a TLE error cause it's bigger than 10**8
+# space complexity O(1)
