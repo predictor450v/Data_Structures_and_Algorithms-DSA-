@@ -13,5 +13,6 @@ for ch in q:
     print(hash_list[index])
 
 
-
+# time complexcity ==> o(n+m)
+# space complexcity ==> o(1)
 
