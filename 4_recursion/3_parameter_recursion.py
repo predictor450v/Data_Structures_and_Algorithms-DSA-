@@ -10,9 +10,18 @@ def func(x,n):
 func('ayush',10)
 
 # printing 1 to n useing recursion
+# head recursion
 def print_1toN(i,n):
     if i > n:
         return
     print(i)
     print_1toN(i+1,n)
-print_1toN(1,100)
+print_1toN(1,10)
+
+# now using backtrack / tail recursion
+def print_1toN_tail(i,n):
+    if i > n:
+        return
+    print_1toN(i+1,n)
+    print(i)
+print_1toN_tail(1,10)
