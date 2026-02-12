@@ -19,6 +19,7 @@ def print_1toN(i,n):
 print_1toN(1,10)
 
 # now using backtrack / tail recursion
+# n to 1
 def print_1toN_tail(i,n):
     if i > n:
         return
