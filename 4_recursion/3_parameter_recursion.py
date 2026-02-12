@@ -1,4 +1,5 @@
-
+#  this time i didn't use any count value
+# i used function parameters 
 
 def func(x,n):
     if n == 0:
