@@ -22,6 +22,6 @@ print_1toN(1,10)
 def print_1toN_tail(i,n):
     if i > n:
         return
-    print_1toN(i+1,n)
+    print_1toN_tail(i+1,n)
     print(i)
-print_1toN_tail(1,10)
+print_1toN_tail(1,4)
