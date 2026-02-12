@@ -8,3 +8,11 @@ def func(x,n):
     print(x)
     func(x,n-1)
 func('ayush',10)
+
+
+def print_1toN(i,n):
+    if i > n:
+        return
+    print(i)
+    print_1toN(i+1,n)
+print_1toN(1,100)
