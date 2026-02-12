@@ -26,3 +26,12 @@ def print_1toN_tail(i,n):
     print_1toN_tail(i+1,n)
     print(i)
 print_1toN_tail(1,4)
+
+
+# n to 1 using head recurtion 
+def funccc(N):
+    if N == 0:
+        return
+    print(N)
+    funccc(N-1)
+funccc(5)
