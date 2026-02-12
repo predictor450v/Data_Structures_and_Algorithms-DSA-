@@ -9,7 +9,7 @@ def func(x,n):
     func(x,n-1)
 func('ayush',10)
 
-
+# printing 1 to n useing recursion
 def print_1toN(i,n):
     if i > n:
         return
