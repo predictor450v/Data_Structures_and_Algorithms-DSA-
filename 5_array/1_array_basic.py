@@ -23,25 +23,35 @@ for i in range(len(array)):
 # insert a new element in array at index 3
 array.insert(3, 600)
 print(array)  # [100, 300, 232, 600, 400, 500]
+# time complexity of insert is O(n) because we may have to shift elements after insertion
 
 # append vs insert
 # append will add the element at the end of the array
 array.append(700)
 print(array)  # [100, 300, 232, 600, 400, 500, 700]
+# time complexity of append is O(1) because it does not require shifting elements
 
 # deletion of element from array with index
 array.remove(200)  # removes the first occurrence of 200 (if it exists)
 print(array)  # [100, 300, 232, 600, 400, 500, 700]
+
+
+
 #  what is array pop , del and remove and when to use what?
 # pop will remove the element at the specified index and return it
 popped_element = array.pop(3)  # removes the element at index 3 (600)
 print(popped_element)  # 600
 print(array)  # [100, 300, 232, 400, 500, 700]
+# time complexity of pop is O(n) because we may have to shift elements after deletion
 
 # del will remove the element at the specified index without returning it
 del array[2]  # removes the element at index 2 (232)
-print(array)  # [100, 300, 400, 500, 700
+print(array)  # [100, 300, 400, 500, 700]
+# time complexity of pop and del is O(n) because we may have to shift elements after deletion
 
 # remove will remove the first occurrence of the specified value
 array.remove(400)  # removes the first occurrence of 400
 print(array)  # [100, 300, 500, 700]
+
+# time complexity of pop, del and remove is O(n) 
+# because we may have to shift elements after deletion
