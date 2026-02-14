@@ -11,4 +11,11 @@ print(array[1])  # 300
 for i in range(len(array)):
     if array[i] == 400:
         print(i)  # 3
-        
+
+#  time complexity of above code is O(n) 
+# because we have to traverse the array to find the index of 400
+
+# print all the elements of array
+for i in range(len(array)):
+    print(array[i])
+#  time complexity of above code is O(n)
