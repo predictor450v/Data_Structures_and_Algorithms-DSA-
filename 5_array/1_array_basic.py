@@ -28,3 +28,7 @@ print(array)  # [100, 300, 232, 600, 400, 500]
 # append will add the element at the end of the array
 array.append(700)
 print(array)  # [100, 300, 232, 600, 400, 500, 700]
+
+# deletion of element from array with index
+array.remove(200)  # removes the first occurrence of 200 (if it exists)
+print(array)  # [100, 300, 232, 600, 400, 500, 700]
