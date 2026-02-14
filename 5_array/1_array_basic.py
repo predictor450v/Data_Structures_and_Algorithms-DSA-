@@ -1,7 +1,7 @@
 #  what is array 
 array = [100,300,232,400,500]
 print(array)
-print(type(array))
+print(type(array)) 
 
 #  how to access array element
 print(array[0])  # 100
