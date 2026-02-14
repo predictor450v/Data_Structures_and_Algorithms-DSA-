@@ -19,3 +19,7 @@ for i in range(len(array)):
 for i in range(len(array)):
     print(array[i])
 #  time complexity of above code is O(n)
+
+# insert a new element in array at index 3
+array.insert(3, 600)
+print(array)  # [100, 300, 232, 600, 400, 500]
