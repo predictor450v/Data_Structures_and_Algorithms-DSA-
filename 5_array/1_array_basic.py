@@ -23,3 +23,8 @@ for i in range(len(array)):
 # insert a new element in array at index 3
 array.insert(3, 600)
 print(array)  # [100, 300, 232, 600, 400, 500]
+
+# append vs insert
+# append will add the element at the end of the array
+array.append(700)
+print(array)  # [100, 300, 232, 600, 400, 500, 700]
