@@ -66,6 +66,23 @@ class LinkedList:
                 break
             itr = itr.next
             count += 1
+
+    # insert a node at a given index
+    def insert_at(self, index, data):
+        if index < 0 or index > self.get_length():
+            raise Exception("Invalid index")
+        if index == 0:
+            self.insert_at_beginning(data)
+            return
+        count = 0
+        itr = self.head
+        while itr:
+            if count == index - 1:  # find the node before the one to be inserted
+                node = Node(data, itr.next)  # create a new node and set its next to the next of the previous node
+                itr.next = node  # set the next of the previous node to the new node
+                break
+            itr = itr.next
+            count += 1
     
 
 if __name__ == '__main__':   # test the linked list implementation
@@ -86,3 +103,7 @@ if __name__ == '__main__':   # test the linked list implementation
 
     ll.remove_at(2)
     ll.print()
+
+    ll.insert_at(2, 'potato')
+    ll.print()
+
