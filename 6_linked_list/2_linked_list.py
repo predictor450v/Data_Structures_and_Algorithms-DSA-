@@ -26,6 +26,16 @@ class LinkedList:
             itr = itr.next
         print(llstr)  # print the final string representation of the linked list
 
+    # insert at end of linked list
+    def insert_at_end(self, data):
+        if self.head is None:
+            self.head = Node(data, None)
+            return
+        itr = self.head
+        while itr.next:  # traverse to the end of the linked list
+            itr = itr.next
+        itr.next = Node(data, None)  # create a new node and set it as the next of the last node
+
 if __name__ == '__main__':   # test the linked list implementation
     ll = LinkedList()
     ll.insert_at_beginning(5)
@@ -33,4 +43,6 @@ if __name__ == '__main__':   # test the linked list implementation
     ll.insert_at_beginning(23)
     ll.insert_at_beginning(90)
     ll.print()
-
+    
+    ll.insert_at_end(100)
+    ll.print()
