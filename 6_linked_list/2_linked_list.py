@@ -51,6 +51,22 @@ class LinkedList:
             itr = itr.next
         return count
     
+    # remove a node at a given index
+    def remove_at(self, index):
+        if index < 0 or index >= self.get_length():
+            raise Exception("Invalid index")
+        if index == 0:
+            self.head = self.head.next
+            return
+        count = 0
+        itr = self.head
+        while itr:
+            if count == index - 1:  # find the node before the one to be removed
+                itr.next = itr.next.next  # set the next of the previous node to the next of the node to be removed
+                break
+            itr = itr.next
+            count += 1
+    
 
 if __name__ == '__main__':   # test the linked list implementation
     ll = LinkedList()
@@ -67,3 +83,6 @@ if __name__ == '__main__':   # test the linked list implementation
     ll.print()
 
     print('Length of linked list:', ll.get_length())
+
+    ll.remove_at(2)
+    ll.print()
