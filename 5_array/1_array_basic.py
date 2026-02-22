@@ -55,3 +55,4 @@ print(array)  # [100, 300, 500, 700]
 
 # time complexity of pop, del and remove is O(n) 
 # because we may have to shift elements after deletion
+
