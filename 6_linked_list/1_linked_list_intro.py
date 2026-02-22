@@ -22,3 +22,4 @@
 # 4. complexity of operations: linked list may have higher time complexity for certain operations like
 # searching for an element, as it requires traversal of the list, while an array can be accessed directly using an index
 # 5. implementation complexity: linked list can be more complex to implement and manage compared to an array, as it requires handling of pointers and memory management, while arrays are simpler to use and manage in most programming languages
+
