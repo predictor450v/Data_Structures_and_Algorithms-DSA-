@@ -7,3 +7,4 @@ while num>0:
     num = num // 10
 print(f"the digit countof the number {n} is {count}")
 #  time complexity ==> O(log10(N)) space complexity ==> O(1)
+
