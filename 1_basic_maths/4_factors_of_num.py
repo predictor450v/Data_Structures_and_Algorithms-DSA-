@@ -31,3 +31,4 @@ for i in range ( 1 , int (sqrt(num))+1):
 result.sort()
 print(f"using optimal solution the factor of {n} are ==>> {result}")
 
+
