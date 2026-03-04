@@ -28,3 +28,4 @@ for num in m:
         print(f"the count of elements on list m {num}  present in n {hash_list[num]}")
 # time complexcity = o(n+m) almost 10**8
 # space complexity = o(11) alomost o(1)
+
