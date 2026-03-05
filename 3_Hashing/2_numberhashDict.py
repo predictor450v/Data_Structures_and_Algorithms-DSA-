@@ -12,4 +12,5 @@ for e in m:
         print(0)
     else:
         print(hash_dict.get(e,0))
-        
+         
+         
