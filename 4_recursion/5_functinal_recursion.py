@@ -7,3 +7,4 @@ def func(N):
         return 1
     return N + func(N-1)
 print(func(10))
+
