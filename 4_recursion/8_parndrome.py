@@ -8,3 +8,4 @@ def is_palindrome(s, left, right):
     return is_palindrome(s, left + 1, right - 1)
 
 print(is_palindrome("racecar", 0, len("racecar") - 1))
+
